@@ -1,0 +1,38 @@
+{
+  "name": "front-end-track",
+  "version": "0.1.0",
+  "description": "freeCodeCamp front-end track",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "eslint:fix": "eslint -c .eslintrc.json --fix src",
+    "eslint:check":
+      "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
+    "test": "ava | faucet"
+  },
+  "keywords": ["freeCodeCamp"],
+  "author": "Jake Klassen",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-strict-mode": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-config-prettier": "^2.4.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.2.0",
+    "faucet": "^0.0.1",
+    "nodemon": "^1.12.0",
+    "prettier": "^1.6.1"
+  },
+  "dependencies": {},
+  "ava": {
+    "babel": "inherit",
+    "require": ["babel-register"],
+    "tap": true
+  }
+}

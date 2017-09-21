@@ -1,0 +1,11 @@
+{
+  "plugins": ["transform-strict-mode"],
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }],
+    "stage-2"
+  ]
+}
