@@ -4,6 +4,8 @@
 
 Solutions to the freeCodeCamp Front End Track.
 
+Project setup based on my [babel-node-base repo](https://github.com/j-klassen/babel-node-base)
+
 ## Tests
 
 To run all tests: `yarn test` or `npm run test`
